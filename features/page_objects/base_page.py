@@ -24,7 +24,6 @@ def wait_until_element_displayed(self, locator):
 def wait_until_url_changes(self):
     WebDriverWait(self.driver, 2).until(expected_conditions.url_changes)
 
-
 def element_not_displayed(self, css_selector) :
     try:
         self.driver.find_element(By.CSS_SELECTOR, css_selector)
@@ -33,3 +32,10 @@ def element_not_displayed(self, css_selector) :
 
 def element_displayed(self, css_selector) :
     return self.driver.find_element(By.CSS_SELECTOR, css_selector).is_displayed()
+
+def wait_until_alert_is_present (self):
+    WebDriverWait(self.driver, 20).until(expected_conditions.alert_is_present())
+    
+def get_alert_text(self):
+    return self.driver.switch_to.alert.text
+

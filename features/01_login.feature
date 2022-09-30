@@ -7,5 +7,4 @@ Feature: Login to Demoblaze
 Scenario: Login with valid credentials
         Given the user is on Demoblaze page
         When the user logs in with valid credentials
-        Then the page shows the log out button 
-        Then the page shows the welcome button
+        Then the page shows the log out button

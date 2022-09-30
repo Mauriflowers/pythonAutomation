@@ -26,8 +26,3 @@ def login_with_valid_credentials(context) :
 def logout_button_displayed(context) :
     logout_button = element_displayed(context, LOGOUT_BUTTON)
     assert logout_button == True
-   
-@then ('the page shows the welcome button')
-def user_welcome_button_displayed(context) :
-    user_welcome = element_displayed (context,USER_LOG)
-    assert user_welcome == True
