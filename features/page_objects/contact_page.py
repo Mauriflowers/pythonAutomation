@@ -1,7 +1,8 @@
+# BUTTONS
+CONTACT_BTN = '#navbarExample > ul > li:nth-child(2) > a'
+SEND_MESSAGE_BTN = '#exampleModal > div > div > div.modal-footer > button.btn.btn-primary'
+
+# FIELDS
 CONTACT_EMAIL_FIELD = '#recipient-email'
 CONTACT_NAME_FIELD = '#recipient-name'
-MESSAGE_TEXT = '#message-text'
-SEND_MESSAGE_BTN = '#exampleModal > div > div > div.modal-footer > button.btn.btn-primary'
-CONTACT_EMAIL = 'prueba@123.com'
-CONTACT_NAME = 'prueba'
-MESSAGE = 'prueba envio mensaje'
+MESSAGE_FIELD = '#message-text'
